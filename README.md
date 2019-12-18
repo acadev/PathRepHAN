@@ -4,5 +4,15 @@
 - Python 3.6 or higher
 - Tensorflow 1.6 or higher
 
-## Instructions for Use
-See scripts for example usage. Each model requires (1) a 2D word embedding matrix (word count x embedding size) in which the first row is set to 0 and (2) train/val/test data, each as a 2D or 3D 0-padded matrix (document x words or document x lines x words) in which each row corresponds to the word indices for a document in the train/val/test set. This repo does not include code for preprocessing data into appropriate format.
+### Instructions to Run Models
+
+Download the Yelp Reviews dataset from [https://www.yelp.com/dataset](https://www.yelp.com/dataset)
+
+Use the following command to preprocess the Yelp reviews:
+ - python feature_extraction_yelp.py \<path to Yelp json file\>
+
+Use one or more of the following commands to run the desired model:
+ - python tf_cnn.py
+ - python tf_han.py
+ - python tf_hcan.py
+ - python traditional_ml.py
