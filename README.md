@@ -15,4 +15,5 @@ Use one or more of the following commands to run the desired model:
  - python tf_cnn.py
  - python tf_han.py
  - python tf_hcan.py
+ - python tf_hisan_profile.py
  - python traditional_ml.py
